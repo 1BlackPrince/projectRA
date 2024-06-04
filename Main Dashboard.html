@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дошка управління проектами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Дошка управління проектами</h1>
+</div>
+
+<div class="container" id="projectContainer">
+    <!-- Проекти будуть додані тут динамічно -->
+</div>
+
+<button id="openModalBtn">Створити новий проект</button>
+
+<!-- Модальне вікно для створення проекта -->
+<div id="projectModal" style="display:none;">
+    <h2>Новий проект</h2>
+    <label for="projectTitle">Назва проекту:</label>
+    <input type="text" id="projectTitle"><br>
+    <label for="projectDescription">Опис:</label>
+    <textarea id="projectDescription"></textarea><br>
+    <label for="projectStatus">Статус:</label>
+    <select id="projectStatus">
+        <option value="In Progress">В процесі</option>
+        <option value="Completed">Завершено</option>
+        <option value="Not Started">Не розпочато</option>
+    </select><br>
+    <label for="projectId">Номер проекту:</label>
+    <input type="text" id="project-id" name="project-id" placeholder="Введіть номер проекту" required>
+    <label for="workVolume">Обсяг роботи:</label>
+    <input type="number" id="work-volume" name="work-volume" placeholder="Введіть обсяг роботи в годинах" required>
+    <label for="technicalComplexity">Технічна складність:</label>
+    <select id="technicalComplexity">
+        <option value="Low">Низька</option>
+        <option value="Medium">Середня</option>
+        <option value="High">Висока</option>
+    </select><br>
+    <label for="teamSize">Розмір команди:</label>
+    <input type="number" id="team-size" name="team-size" placeholder="Введіть кількість людей в команді" required>
+    <label for="budget">Бюджет:</label>
+    <input type="number" id="budget" name="budget" placeholder="Введіть бюджет проекту" required>
+    <label for="dependencies">Залежності:</label>
+    <input type="number" id="dependencies" name="dependencies" placeholder="Введіть кількість задач із залежностями" required>
+    <label for="factComplexity">Фактична складність:</label>
+    <select id="factComplexity">
+        <option value="Low">Низька</option>
+        <option value="Medium">Середня</option>
+        <option value="High">Висока</option>
+    </select><br>
+    <button id="saveProjectBtn">Зберегти</button>
+    <button id="cancelProjectBtn">Відмінити</button>
+</div>
+
+<script src="Dynamic.js"></script>
+
+</body>
+</html>

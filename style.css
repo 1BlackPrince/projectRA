@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; /* Додаємо відступ знизу для заголовка */
+}
+
+#projectContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-left: 5px solid #007bff; /* Додаємо синю вертикальну лінію для кращого вигляду */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.project-title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project-status {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+} 
+    
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5px; /* Додаємо відступ зправа для кнопки */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#projectModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Початково приховано */
+    width: 90%;
+    max-width: 500px; /* Максимальна ширина модального вікна */
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Щоб ширина включала в себе padding */
+}
+
+textarea {
+    resize: vertical; /* Дозволяє користувачеві змінювати розмір поля тільки вертикально */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#projectModal {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    top: 20px; /* змінено з 50% для зручності скролу */
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1001;
+    overflow-y: auto; /* дозволяє скрол всередині модального вікна */
+    max-height: 80%; /* максимальна висота модального вікна */
+}
+
+#openModalBtn, #saveProjectBtn, #cancelProjectBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
